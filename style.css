@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #F5F5DC;
 }
 
 html {
@@ -166,7 +167,8 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 60vh;
+  margin-bottom: 20vh;
 }
 
 .section__pic-container {
@@ -220,6 +222,8 @@ section {
   height: 2rem;
 }
 
+.icon.arrow {}
+
 /* Buttons */
 
 .btn-container {
@@ -272,6 +276,7 @@ section {
 
 #about {
   position: relative;
+  height: 100vh;
 }
 
 .about-containers {
@@ -296,8 +301,15 @@ section {
 
 .arrow {
   position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5rem;
+  width: 5rem;
+}
+
+.icon.arrow:hover {
+  filter: brightness(0);
 }
 
 .details-container {
@@ -319,4 +331,42 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+/* Experience */
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article.icon {
+  cursor: default;
 }
