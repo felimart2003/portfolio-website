@@ -9,9 +9,8 @@ function toggleMenu() {
 //     scrollTop: $("#about").offset().top
 // }, 100000);
 
-
 const showOnPx = 150;
-const backToTopButton = document.querySelector(".back-to-top")
+const backToTopButton = document.querySelector(".back-to-top");
 
 const scrollContainer = () => {
   return document.documentElement || document.body;
@@ -19,11 +18,11 @@ const scrollContainer = () => {
 
 const goToTop = () => {
   document.body.scrollIntoView({
-    behavior: "smooth"
+    behavior: "smooth",
   });
 };
 
-window.addEventListener('scroll', scrollFunction)
+window.addEventListener("scroll", scrollFunction);
 
 function scrollFunction() {
   if (scrollContainer().scrollTop > showOnPx) {

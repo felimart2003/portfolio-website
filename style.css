@@ -9,10 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: linear-gradient(
-    white,
-    rgb(255, 220, 167)
-  );
+  background-image: linear-gradient(white, rgb(255, 220, 167));
   background-color: #f5f5dc;
 }
 
@@ -35,7 +32,6 @@ html {
 p {
   color: rgb(85, 85, 85);
 }
-
 
 /* Back to top */
 
@@ -105,7 +101,6 @@ a:hover {
 
 .logo:hover {
   cursor: pointer;
-  
 }
 
 /* Hamburger menu */
@@ -342,6 +337,10 @@ section {
   border-radius: 3rem;
 }
 
+.text-container {
+  width: 72vh;
+}
+
 .arrow {
   position: absolute;
   bottom: 2rem;
@@ -483,9 +482,9 @@ footer {
   background-color: black;
   color: white;
 }
-  /* background-image: linear-gradient(rgb(234, 250, 255), rgb(0, 247, 255)); */
+/* background-image: linear-gradient(rgb(234, 250, 255), rgb(0, 247, 255)); */
 footer .nav-links a {
-  color: white
+  color: white;
 }
 
 footer p {
