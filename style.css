@@ -9,8 +9,24 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #F5F5DC;
+  background-image: linear-gradient(
+    white,
+    rgb(255, 220, 167)
+  );
+  background-color: #f5f5dc;
 }
+
+/* Possible bg colors
+rgb(245, 245, 220),
+rgb(228, 228, 161),
+rgb(234, 234, 180),
+rgb(239,239,200),
+rgb(245,245,220)
+rgb(251,251,240) 
+rgb(231, 231, 181),
+rgb(222, 149, 102),
+
+*/
 
 html {
   scroll-behavior: smooth;
@@ -18,6 +34,25 @@ html {
 
 p {
   color: rgb(85, 85, 85);
+}
+
+
+/* Back to top */
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: block;
+  opacity: 0;
+  cursor: default;
+  transition: opacity 1.5s, all 300ms ease;
+}
+
+.show {
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 2s, all 300ms ease;
 }
 
 /* Transition */
@@ -60,11 +95,17 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .logo:hover {
-  cursor: default;
+  cursor: pointer;
+  
 }
 
 /* Hamburger menu */
@@ -403,9 +444,9 @@ article .icon {
 /* Contact */
 #contact {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   flex-direction: column;
-  height: 50vh;
+  height: 30vh;
 }
 
 .contact-info-upper-container {
@@ -433,4 +474,21 @@ article .icon {
 
 .contact-icon {
   cursor: default;
+}
+
+/* Footer */
+
+footer {
+  height: 22vh;
+  background-color: black;
+  color: white;
+}
+  /* background-image: linear-gradient(rgb(234, 250, 255), rgb(0, 247, 255)); */
+footer .nav-links a {
+  color: white
+}
+
+footer p {
+  color: white;
+  text-align: center;
 }
