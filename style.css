@@ -431,7 +431,7 @@ article .icon {
 /* Projects */
 #projects {
   position: relative;
-  height: 103vh;
+  height: 100vh;
 }
 
 .color-container {
@@ -441,8 +441,8 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 10rem; 
+  /* height: 30rem;  */
 }
 
 .project-title {
@@ -469,6 +469,15 @@ article .icon {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center; */
+}
+
+#projects .article-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start; /* Ensure items align at the start */
+  gap: 2rem; /* Adjust gap as needed */
 }
 
 /* Contact */
